@@ -7,6 +7,7 @@ $font-s: 14px;
 body {
   background-color: #1A2328;
   color: #C5C5C5;
+  font-family: "Segoe UI",微軟正黑體;
 }
 
 .wrap {
@@ -56,5 +57,38 @@ body {
     border: 1px solid #07C0C3;
     margin: 0 3%;
     padding: 20px;
+    font-size: $font-s;
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      label {
+      width: 100%;
+      color: #07C0C3;
+      margin-bottom: 5px;
+      }
+      input {
+        width: 77%;
+        line-height: 20px;
+        background-color: #1A2328;
+        border: none;
+        border-bottom: 1px solid #707070;
+        margin-bottom: 28.5px;
+        color:#C5C5C5;
+        padding: 1px;
+      }
+      .pin {
+        width: 14.5%;
+        text-align: center;
+      }
+      span {
+        height: 20px;
+        padding: 1px 6px;
+        border-bottom: 1px solid #707070;
+      }
+      p {
+        line-height: 20px;
+        margin: 0 11.5px 0 5px;
+      }
+    }  
   }
 }

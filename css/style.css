@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,7 +44,8 @@ table {
 
 body {
   background-color: #1A2328;
-  color: #C5C5C5; }
+  color: #C5C5C5;
+  font-family: "Segoe UI",微軟正黑體; }
 
 .wrap {
   margin: 0 auto;
@@ -102,4 +104,34 @@ body {
   .content .paymentmethod {
     border: 1px solid #07C0C3;
     margin: 0 3%;
-    padding: 20px; }
+    padding: 20px;
+    font-size: 14px; }
+    .content .paymentmethod .card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .content .paymentmethod .card label {
+        width: 100%;
+        color: #07C0C3;
+        margin-bottom: 5px; }
+      .content .paymentmethod .card input {
+        width: 77%;
+        line-height: 20px;
+        background-color: #1A2328;
+        border: none;
+        border-bottom: 1px solid #707070;
+        margin-bottom: 28.5px;
+        color: #C5C5C5;
+        padding: 1px; }
+      .content .paymentmethod .card .pin {
+        width: 14.5%;
+        text-align: center; }
+      .content .paymentmethod .card span {
+        height: 20px;
+        padding: 1px 6px;
+        border-bottom: 1px solid #707070; }
+      .content .paymentmethod .card p {
+        line-height: 20px;
+        margin: 0 11.5px 0 5px; }
