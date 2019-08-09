@@ -7,36 +7,42 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-	<div class="content">
-		<h1>請選擇付款方式</h1>
-		<hr>
-		<div id="card">
-			<h2>信用卡</h2>
-			<h2>刷卡</h2>
-		</div>
-		<div id="cvs">
-			<h2>超商代碼</h2>
-			<h2>繳費</h2>
-		</div>
-		<div id="atm">
-			<h2>ATM</h2>
-			<h2>轉帳</h2>
-		</div>
-		<div class="paymentmethod">
-			<div class="card">
-				<label>付款人信箱</label>
-				<input type="email" name="email">
-				<label>信用卡卡號</label>
-				<input type="" name="">-<input type="" name="">-<input type="" name="">-<input type="" name="">
-				<label>有效年月</label>
-				<input type="" name=""><p>月 / </p><input type="" name=""><p>年</p>
-				<label>背後末三碼</label>
-				<input type="" name="">
+	<div class="wrap">
+		<div class="content">
+			<h1>請選擇付款方式</h1>
+			<hr>
+			<div class="paygroup">
+				<div id="card" class="paybtn">
+					<h2>信用卡</h2>
+					<h2>刷卡</h2>
+				</div>
+				<div id="cvs" class="paybtn">
+					<h2>超商代碼</h2>
+					<h2>繳費</h2>
+				</div>
+				<div id="atm" class="paybtn">
+					<h2>ATM</h2>
+					<h2>轉帳</h2>
+				</div>
+			</div>
+			<div class="paymentmethod">
+				<div class="card">
+					<label>付款人信箱</label>
+					<input type="email" name="email">
+					<label>信用卡卡號</label>
+					<input type="" name="">-<input type="" name="">-<input type="" name="">-<input type="" name="">
+					<label>有效年月</label>
+					<input type="" name=""><p>月 / </p><input type="" name=""><p>年</p>
+					<label>背後末三碼</label>
+					<input type="" name="">
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="invoice">
-		
+		<ul>
+			<li>我的訂單 <span>TWD<em></em></span><a href="#">收起明細</a></li>
+		</ul>
 	</div>
 	<div class="checkbutton">
 		<button form="">確定付款($<em></em>)</button>

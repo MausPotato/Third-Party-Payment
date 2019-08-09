@@ -1,0 +1,60 @@
+@import "reset";
+
+$font-l: 20px;
+$font-m: 18px;
+$font-s: 14px;
+
+body {
+  background-color: #1A2328;
+  color: #C5C5C5;
+}
+
+.wrap {
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "content"
+                       "invoice"
+                       "checkbutton";
+}
+
+.content {
+  grid-area: content;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  h1 {
+    font-size: $font-l;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  hr {
+    border: none;
+    height: 1px;
+    width: 15%;
+    background-color: #707070;
+    margin-bottom: 23.5px;
+  }
+  .paygroup {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 29px;
+  }
+  .paybtn {
+    width: 22.9%;
+    height: 52px;
+    border: 1px solid #185458;
+    text-align: center;
+    padding: 10px;
+    color: #07C0C3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .paymentmethod {
+    border: 1px solid #07C0C3;
+    margin: 0 3%;
+    padding: 20px;
+  }
+}
