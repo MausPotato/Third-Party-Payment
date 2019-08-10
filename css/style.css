@@ -85,7 +85,7 @@ body {
     justify-content: space-around;
     margin-bottom: 29px; }
   .content .paybtn {
-    width: 22.9%;
+    width: 23%;
     height: 52px;
     border: 1px solid #185458;
     text-align: center;
@@ -101,22 +101,36 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    .content .paybtn:hover {
+      border: 1px solid #07C0C3;
+      -webkit-box-shadow: 0px 0px 3px #07C0C3;
+      box-shadow: 0px 0px 3px #07C0C3; }
   .content .paymentmethod {
     border: 1px solid #07C0C3;
     margin: 0 3%;
     padding: 20px;
-    font-size: 14px; }
-    .content .paymentmethod .card {
+    font-size: 14px;
+    overflow: hidden; }
+    .content .paymentmethod form {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-      .content .paymentmethod .card label {
+      .content .paymentmethod form label {
         width: 100%;
         color: #07C0C3;
         margin-bottom: 5px; }
-      .content .paymentmethod .card input {
+        .content .paymentmethod form label a {
+          border: 1px solid #707070;
+          border-radius: 50%;
+          text-decoration: none;
+          color: #707070;
+          text-align: center;
+          padding: 0 5px;
+          margin-left: 4px;
+          font-size: 12px; }
+      .content .paymentmethod form input {
         width: 77%;
         line-height: 20px;
         background-color: #1A2328;
@@ -125,13 +139,24 @@ body {
         margin-bottom: 28.5px;
         color: #C5C5C5;
         padding: 1px; }
-      .content .paymentmethod .card .pin {
+      .content .paymentmethod form .pin {
         width: 14.5%;
         text-align: center; }
-      .content .paymentmethod .card span {
+      .content .paymentmethod form span {
         height: 20px;
         padding: 1px 6px;
         border-bottom: 1px solid #707070; }
-      .content .paymentmethod .card p {
+      .content .paymentmethod form p {
         line-height: 20px;
         margin: 0 11.5px 0 5px; }
+  .content .decoration {
+    color: #185458;
+    margin: 0 -10px -10px -10px;
+    text-align: center;
+    white-space: nowrap; }
+
+.checkbutton {
+  font-size: 20px;
+  margin: 0 3%;
+  border: 1px solid #185458;
+  background-color: #00676E; }

@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Third-Party-Payment</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Third-Party-Payment</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-	<div class="wrap">
-		<div class="content">
-			<h1>請選擇付款方式</h1>
-			<hr>
-			<div class="paygroup">
-				<div id="card" class="paybtn">
-					<h2>信用卡</h2>
-					<h2>刷卡</h2>
-				</div>
-				<div id="cvs" class="paybtn">
-					<h2>超商代碼</h2>
-					<h2>繳費</h2>
-				</div>
-				<div id="atm" class="paybtn">
-					<h2>ATM</h2>
-					<h2>轉帳</h2>
-				</div>
-			</div>
-			<div class="paymentmethod">
-				<div class="card">
-					<label>付款人信箱</label>
-					<input type="email" name="email">
-					<label>信用卡卡號</label>
-					<input class="pin" type="tel" name="" size="4" maxlength="4"><span>-</span><input class="pin" type="tel" name="" size="4" maxlength="4"><span>-</span><input class="pin" type="tel" name="" size="4" maxlength="4"><span>-</span><input class="pin" type="tel" name="" size="4" maxlength="4">
-					<label>有效年月</label>
-					<input class="pin" type="text" size="2" maxlength="2" name="month" placeholder="MM"><p>月 </p><p>/ </p><input class="pin" type="year" size="4" maxlength="4" name="year" placeholder="YYYY"><p>年</p>
-					<label>背後末三碼</label>
-					<input class="pin" type="" name="" placeholder="CVV">
-				</div>
-				<div class="cvs">
-					
-				</div>
-				<div class="atm">
-					
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="invoice">
-		<ul>
-			<li>我的訂單 <span>TWD<em></em></span><a href="#">收起明細</a></li>
-		</ul>
-	</div>
-	<div class="checkbutton">
-		<button form="">確定付款($<em></em>)</button>
-	</div>
+  <div class="wrap">
+    <div class="content">
+      <h1>請選擇付款方式</h1>
+      <hr>
+      <div class="paygroup">
+        <div id="card" class="paybtn">
+          <h2>信用卡</h2>
+          <h2>刷卡</h2>
+        </div>
+        <div id="cvs" class="paybtn">
+          <h2>超商代碼</h2>
+          <h2>繳費</h2>
+        </div>
+        <div id="atm" class="paybtn">
+          <h2>ATM</h2>
+          <h2>轉帳</h2>
+        </div>
+      </div>
+      <div class="paymentmethod">
+        <form class="card">
+          <label>付款人信箱</label>
+          <input type="email" name="email">
+          <label>信用卡卡號</label>
+          <input class="pin" type="tel" name="" size="4" maxlength="4"><span>-</span><input class="pin" type="tel" name="" size="4" maxlength="4"><span>-</span><input class="pin" type="tel" name="" size="4" maxlength="4"><span>-</span><input class="pin" type="tel" name="" size="4" maxlength="4">
+          <label>有效年月</label>
+          <input class="pin" type="text" size="2" maxlength="2" name="month" placeholder="MM"><p>月 </p><p>/ </p><input class="pin" type="year" size="4" maxlength="4" name="year" placeholder=" YYYY"><p>年</p>
+          <label>背後末三碼<a href="#">?</a></label>
+          <input class="pin" type="tel" name="" size="3" maxlength="3" placeholder="CVV">
+        </form>
+        <div class="cvs">
+          
+        </div>
+        <div class="atm">
+          
+        </div>
+        <p class="decoration">| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |</p>
+      </div>
+    </div>
+  </div>
+  <div class="invoice">
+    <ul>
+      <li>我的訂單 <span>TWD<em></em></span><a href="#">收起明細</a></li>
+    </ul>
+  </div>
+  <div class="checkbutton">
+    <button form="card">確定付款($<em>1500</em>)</button>
+  </div>
 </body>
 </html>
